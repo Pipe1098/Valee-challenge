@@ -27,6 +27,7 @@ repositories {
 	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	//implementation("org.springframework.boot:spring-boot-starter-security")
@@ -39,6 +40,10 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.security:spring-security-test")
 	implementation ("com.opencsv:opencsv:5.5.1")
+	implementation("org.springdoc:springdoc-openapi-data-rest:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-ui:1.6.0")
+	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.0")
+	implementation ("com.squareup.okhttp3:okhttp:4.9.0")
 }
 
 tasks.withType<KotlinCompile> {

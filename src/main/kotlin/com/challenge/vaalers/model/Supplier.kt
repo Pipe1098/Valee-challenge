@@ -1,12 +1,11 @@
 package com.challenge.vaalers.model
 
+import lombok.NoArgsConstructor
 import java.time.LocalDateTime
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 
 @Entity
+@NoArgsConstructor
 class Supplier(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -14,5 +13,5 @@ class Supplier(
     val name: String,
     val code: String?,
     val isActive: Boolean = true,
-    val entryDate: LocalDateTime = LocalDateTime.now()
+    val entryDate: LocalDateTime = LocalDateTime.now(),
 )

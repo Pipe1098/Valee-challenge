@@ -1,4 +1,4 @@
-package com.challenge.vaalers.dto
+package com.challenge.vaalers.dto.response
 
 data class ApiResponse(
     val code: Int,
