@@ -10,7 +10,6 @@ import javax.persistence.*
 data class Invitation(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    //val supplierId: Int = 0,
     val commerceCellPhone: String = "",
     @ManyToOne
     @JoinColumn(name = "supplier_id")
